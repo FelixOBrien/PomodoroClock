@@ -8,10 +8,10 @@ $(document).ready(function(){
         e.preventDefault();
         var minutes = parseInt(document.getElementById("mins").value);
         var seconds = parseInt(document.getElementById("secs").value);
-        if(!minutes || minutes < 0 || !isNaN(minutes)){
+        if(!minutes || minutes < 0 || isNaN(minutes)){
             minutes = 0;
         }
-        if(!seconds || minutes < 0 || !isNaN(seconds)){
+        if(!seconds || minutes < 0 || isNaN(seconds)){
             seconds = 0;
         }
         total = minutes*60 + seconds;
